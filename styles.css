@@ -1,0 +1,103 @@
+/* Загальні стилі для тіла сторінки */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;  /* Світло-сірий фон */
+    color: #333;  /* Темно-сірий текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Градієнт на фоні */
+}
+
+/* Контейнер для історії */
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Білосніжний фон з легким затемненням */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Заголовок */
+.title {
+    color: #2c3e50;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Стиль для тексту історії */
+.story {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #444;  /* Темніший текст */
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Відтінок для сильних елементів */
+strong {
+    color: #e74c3c; /* Червоний для акцентів */
+}
+
+/* Стиль для кнопки */
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    background-color: #3498db;  /* Синій колір */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: #2980b9; /* Темніший синій при наведенні */
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+    transform: translateY(-3px); /* Легкий ефект натискання */
+}
+
+/* Стиль для канвасу гри */
+#gameCanvas {
+    display: block;
+    margin: 20px auto;
+    background-color: #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль для результату гри */
+#score {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2em;
+    }
+
+    .story {
+        font-size: 1.1em;
+    }
+
+    .start-button {
+        padding: 12px 25px;
+        font-size: 1.2em;
+    }
+}
